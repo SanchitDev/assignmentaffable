@@ -1,0 +1,48 @@
+Index Name: demosuspicious
+
+{
+    "mappings": {
+        "demosuspicious": {
+            "properties": {
+                "pk": {
+                    "type": "text"
+                },
+                "suspicious": {
+                    "type": "boolean"
+                }
+            }
+        }
+    }
+}
+
+--------------------------------------------------
+
+Index Name: demo
+
+{
+    "mappings": {
+        "demo": {
+            "properties": {
+                "pk": {
+                    "type": "text"
+                },
+                "username": {
+                    "type": "keyword"
+                },
+                "followerCount":{
+                    "type": "long"
+                },
+                "followingCount":{
+                    "type": "long"
+                },
+                "followerRatio":{
+                    "type": "double"
+                },
+                "created": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+                }
+            }
+        }
+    }
+}
